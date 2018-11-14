@@ -39,8 +39,8 @@ set ytics (-10,0,10,20) nomirror
 unset key
 
 load dir2."/set3.pal"
-#set cbrange [2:6] 
-#plot for [i=2:6] dir."/ActivityMatrix.txt" u 1:i w l lw 2 lc palette cb i 
+set cbrange [2:6] 
+plot for [i=2:6] dir."/ActivityMatrix.txt" u 1:i w l lw 2 lc palette cb i 
 plot  dir."/ActivityMatrix_select.txt" u 1:2 w l lw 2 lc rgb "#8dd3c7" ,\
      "" u 1:3 w l lw 2 lc rgb "#ffffb3" ,\
      "" u 1:4 w l lw 2 lc rgb "#bebada" ,\
